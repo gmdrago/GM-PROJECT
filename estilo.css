@@ -87,3 +87,29 @@ body{
 	align-items: ;
 }
 
+body {
+	background: linear-gradient(to bottom, #ffffff 0%, #f0ed66 100%);
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    transition: all 0.5s ease;
+}
+
+.circle:hover {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 0%;
+    margin: 0;
+}
+
+  
