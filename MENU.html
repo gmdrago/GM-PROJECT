@@ -6,6 +6,7 @@
 		<title>MENU</title>
 		<link rel="stylesheet" type="text/css" href="estilo.css">
     <title>MENU</title>
+    
 
 </head>
 <style>
@@ -100,4 +101,69 @@
         <p>Copyright © 2023 GM-PROJECT
     </footer>
 </body>
+</html>
+
+
+<html>
+<head>
+  <script>
+    var Escena_actual = 0;
+    var Animals = ["gos", "gat", "conill", "cavall", "ruc"];
+    document.write(Animals[2]);
+    var Titols = [
+      "Presentació dels personatges",
+      "Fi de la partida per abandonament",
+      "Fi de la partida perquè han matat al protagonista",
+      "El protagonista ha rescatat a la princesa",
+    ];
+    var Opcions1 = [
+      "No vull seguir jugant",
+      "No vull seguir jugant",
+      "Tinc por, no vull seguir jugant",
+    ];
+    var Cap_a_lescena = [2, 2, 2];
+    var Escena_zero = {
+      Titol: "Presentació dels personatges",
+      Descripció:
+        "El joan està passejant tranquilament pel carrer dels llenyataires quan veu que un senyor amb pinta de dolent persegueix a la princesa",
+      Video: "video_escena_1.mpg",
+      Opció_1: "Passo, no vull embolics",
+      Cap_a_lescena_1: 1,
+      Opció_2: "Vaig a buscar al dolent i li dic que deixi en pau a la princesa",
+      Cap_a_lescena_2: 2,
+      Opció_3: "Segueixo discretament al sospitós i a la princesa",
+      Cap_a_lescena_3: 3,
+    };
+    document.write(Escena_zero.Opció_3);
+    var Escenes = [
+      {
+        Titol: "Presentació dels personatges",
+        Descripció:
+          "El joan està passejant tranquil·lament pel carrer dels llenyataires quan veu que un senyor amb pinta de dolent persegueix a la princesa",
+     
+        Opcions: [
+          "Passo, no vull embolics",
+          "Vaig a buscar al dolent i li dic que deixi en pau a la princesa",
+          "Segueixo discretament al sospitós i a la princesa",
+        ],
+        Cap_a_lescena: [1, 2, 3],
+      },
+      {
+        Titol: "La princesa segrestada",
+        Descripció:
+          "El dolent ha enxampat a la princesa i s’ha detingut a una guarida en meitat del bosc. Què faràs?",
+ 
+        Opcions: [
+          "Fuig com un covard",
+          "Em vaig a la guarida i ataco al dolent",
+          "Vaig a visitar al ferrer en busca d’armes",
+        ],
+        Cap_a_lescena: [1, 2, 4],
+      },
+// I així continuem fins a tenir totes les escenes
+];
+Escena_actual = Escenes[Escena_actual].Cap_a_lescena[Opció];
+</script>
+</head>
+<body></body>
 </html>

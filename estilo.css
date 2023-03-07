@@ -87,29 +87,115 @@ body{
 	align-items: ;
 }
 
-body {
-	background: linear-gradient(to bottom, #ffffff 0%, #f0ed66 100%);
-  }
 
-  .circle {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    transition: all 0.5s ease;
+
+.container {
+	display: flex;
+	flex-direction: column;
 }
 
-.circle:hover {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    border-radius: 0%;
-    margin: 0;
+#main-square {
+	width: 200px;
+	height: 200px;
+	background-color: #F5F5DC;
+	border: 1px solid black;
+	text-align: center;
+
+	
+	
 }
 
-  
+#buttons-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+
+
+	
+}
+
+#extra-square {
+	width: 200px;
+	height: 200px;
+	background-color: #F5F5DC;
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 10px;
+	
+
+	
+}
+
+#extra-square{
+	margin: auto;
+}
+#main-square {
+	margin: auto;
+}
+.INTRODUCCION {
+	margin: auto;
+}
+
+
+section img {
+	width: 0px;
+    flex-grow: 1;
+	object-fit: cover;
+	opacity: .8;
+	transition: .5s ease;
+	
+}
+section {
+	border-style: solid;
+	border-radius: 12px;
+	display: flex;
+    width: auto;
+	height: 630px;
+	
+}
+
+section img:hover {
+	cursor: crosshair;
+	width: 700px;
+	opacity: 1;
+	filter: contrast(120%);
+
+}
+
+.BOTON {
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 100px;
+	text-decoration:none;
+	font-weight: 700;
+	font-size: 35px;
+	padding: 22px 60px;
+	color:#333333;
+	background-color:#FFD27D;
+	border-color: #d8d8d8;
+	border-width: 4px;
+	border-style: solid;
+	border-radius:35px;
+	transition: background-color, width 1s;
+	display: inline-block;
+	margin: auto;
+	
+}
+
+	  
+.BOTON {
+	margin: auto;
+	
+}
+
+
+.BOTON:hover{
+	width: 700px;
+	height: ;
+	align-items:center ;
+	margin: auto;
+
+	
+}
+

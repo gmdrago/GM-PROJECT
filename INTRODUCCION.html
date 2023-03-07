@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 		<title>INICIO</title>
-		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="estilo.css"> 
     <title>INICIO</title>
 </head>
 <body>
@@ -48,6 +48,34 @@
     <br>
     <br>
     <br>
+    <div id="main-square">
+        <p>Texto dentro del cuadrado</p>
+        <div id="buttons-container">
+          <button id="button1">Botón 1</button>
+          <button id="button2">Botón 2</button>
+        </div>
+        <div id="extra-square" style="display:none;">
+          <p>Texto dentro del cuadrado extra</p>
+          <div id="extra-buttons-container">
+            <button id="extra-button1">Botón extra 1</button>
+            <button id="extra-button2">Botón extra 2</button>
+          </div>
+        </div>
+      </div>
+     
+
+    <script>
+        document.getElementById("button1").addEventListener("click", function() {
+        document.getElementById("extra-square").style.display = "block";
+        });
+        document.getElementById("button2").addEventListener("click", function() {
+        document.getElementById("extra-square").style.display = "block";
+         });
+  
+    </script>
+    
+
+      
     <br>
     <br>
     <br>
